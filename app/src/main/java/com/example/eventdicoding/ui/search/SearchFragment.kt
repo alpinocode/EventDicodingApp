@@ -87,6 +87,7 @@ class SearchFragment : Fragment() {
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
+                searchViewModel.searchView(newText.toString())
                 return false
             }
         })
